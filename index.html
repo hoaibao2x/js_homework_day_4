@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Bài 1 -->
+    <div class="card w-50 mx-auto">
+        <div class="card-header text-center text-light">
+            Sắp xếp 3 số nguyên
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="soNguyenMot">Số nguyên thứ nhất:</label>
+                <input id="soNguyenMot" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="soNguyenHai">Số nguyên thứ hai:</label>
+                <input id="soNguyenHai" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="soNguyenBa">Số nguyên thứ ba:</label>
+                <input id="soNguyenBa" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <button id="btnTinhToan1" class="btn btn-success">Tính nào !</button>
+            </div>
+            <div class="alert alert-info">
+                <span id="xepBaSo">3 số nguyên theo thứ tự tăng dần:</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bài 2 -->
+    <div class="card w-50 mx-auto">
+        <div class="card-header text-center text-light">
+            Chương trình tự động chào hỏi
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="mySelect">Bạn là ai ?</label>
+                <select class="form-control" id="mySelect">
+                    <option value="" disabled selected hidden>Phải chọn role đó nghe !</option>
+                    <option value="B">Bố</option>
+                    <option value="M">Mẹ</option>
+                    <option value="T">Anh trai</option>
+                    <option value="G">Em gái</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button id="btnChao" class="btn btn-success">Chào tui đi !</button>
+            </div>
+            <div class="form-group">
+                <p class="alert alert-info" id="loiChao"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bài 3 -->
+    <div class="card w-50 mx-auto">
+        <form>
+            <div class="card-header text-center text-light">
+                Đếm số chẵn lẻ
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="soNguyen1">Số nguyên thứ nhất:</label>
+                    <input id="soNguyen1" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="soNguyen2">Số nguyên thứ hai:</label>
+                    <input id="soNguyen2" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="soNguyen3">Số nguyên thứ ba:</label>
+                    <input id="soNguyen3" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button id="btnSapXep" class="btn btn-success" type="button">Tính nào !</button>
+                    <button class="btn btn-danger" type="reset">Reset</button>
+                </div>
+                <p class="alert alert-info" id="inKetQua">
+                    Kết quả:
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bài 4 -->
+    <div class="card w-50 mx-auto">
+        <form>
+            <div class="card-header text-center text-light">
+                Dự đoán loại tam giác
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="canhA">Cạnh thứ nhất:</label>
+                    <input id="canhA" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="canhB">Cạnh thứ hai:</label>
+                    <input id="canhB" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="canhC">Cạnh thứ ba:</label>
+                    <input id="canhC" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button id="btnDuDoan" class="btn btn-success" type="button">Dự đoán</button>
+                    <button id="btnReset_2" class="btn btn-danger" type="reset">Reset</button>
+                </div>
+                <p class="alert alert-info" id="inKetQua_2">
+                    Kết quả:
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="./js/main.js"></script>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
